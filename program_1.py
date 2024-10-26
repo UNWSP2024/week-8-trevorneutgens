@@ -12,7 +12,7 @@ def initials_generator(personsName):
     # make initials for each part
     for part in name_parts:
         if part:
-            personsInitials += part[0] + "."
+            personsInitials += part[0] + ". "
 
 
     return personsInitials.strip()

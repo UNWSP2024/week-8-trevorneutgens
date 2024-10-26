@@ -6,9 +6,14 @@
 # Add your logic starting on line 11
 
 def initials_generator(personsName):
-
     personsInitials = ""
-    #    Add your logic here
+    # split the name into parts
+    name_parts = personsName.split()
+    # make initials for each part
+    for part in name_parts:
+        if part:
+            personsInitials += part[0] + "."
+
 
     return personsInitials.strip()
 
